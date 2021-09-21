@@ -1,0 +1,65 @@
+* {
+    text-align: center;
+}
+
+body {
+    background-color: whitesmoke;
+    /* background-image: url(background_ikherkhe.jpg);  */
+    background-size: contain;
+}
+header img {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 45%;
+    transition: all 2s;
+}
+img:hover {
+    transform: scale(1.1);
+}
+footer{
+    clear: both;
+    text-align: center;
+}
+p {
+    color: green;
+    text-decoration: underline;
+    line-height: 40px;
+    font-style: italic;
+    /* font-weight: bold; */
+    font-size: 150%;
+    /* font-family: 'Times New Roman', Times, serif,sans-serif ; */
+    font-family: 'Playfair Display', serif;
+}
+p:hover {
+    color: white;
+    background: green;
+}
+a{
+    cursor: pointer;
+    display: inline-block;
+}
+nav {
+    display: block;
+    color: blue;
+}
+span {
+    font-size: 1rem;
+}
+.topnav  {
+    margin-block-end: 5px;
+}
+.buffer {
+    height: 50px;
+  }
