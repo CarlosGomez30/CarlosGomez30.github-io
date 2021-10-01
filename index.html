@@ -23,10 +23,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
       <a href="./Menu-IKHERKHE.pdf" class="w3-bar-item w3-button">Menu</a>
+      <a onclick="myFunction2() "href="" class="w3-bar-item w3-button">Crea tu combinacion favorita</a>
       <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Nuestros Productos <i class="fa fa-caret-down"></i>
       </a>
-      <div id="demo_tarta" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <div id="demo_nosotros" class="w3-bar-block w3-hide w3-padding-large w3-medium">
           <a href="#" class="w3-bar-item w3-button">Tartas (8 a 10 rebanadas)</a>
           <a href="#" class="w3-bar-item w3-button">Tartas de queso con frutas de temporada (8 a 10 rebanadas)</a>
           <a href="#" class="w3-bar-item w3-button">Pasteles (14 a 16 rebanadas)</a>
@@ -38,7 +39,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
             Ocasiones especiales <i class="fa fa-caret-down"></i>
           </a>
-          <div id="especiales" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+          <div id="demo_especiales" class="w3-bar-block w3-hide w3-padding-large w3-medium">
               <a href="#" class="w3-bar-item w3-button">Profiteroles minis salados</a>
               <a href="#" class="w3-bar-item w3-button">Pays con rellenos de atún, rajas, mole, entre otros</a>
               <a href="#" class="w3-bar-item w3-button">Pregunta por los pasteles para fiestas de cumpleaños y/o celebraciones especiales</a>
@@ -72,16 +73,15 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
   <!-- Image header -->
   <div class="w3-display-container w3-container">
-    <img src="https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/168989420_102995511903003_2779694627982950262_n.png?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFw-qQ_ECefAl9Dn33p3c-ewYnrSbJckj_BietJslySP4aG7BYzEjtPfcHNhSwz04kGqQIOIFmUyvYBqUZ6HJ8K&_nc_ohc=hVCSLdlJiToAX_NXNv1&_nc_ht=scontent-den4-1.xx&oh=5ff6a30e81ef91414e4dd168cf61ea07&oe=61664947" alt="Logo" style="width:100%">
-    <div class="w3-display-topleft" style="padding:24px 48px">
-      <p class="info_clausula"><b> Postres finos basados en recetas de repostería fina tradicional del recetario de la Abuela Grace, 
-        repostera que desarrolló su oficio desde mediados del siglo XX en el sur del estado de Veracruz</b></p>
-      <p><a onclick="myFunction2()"href="" class="w3-button w3-padding-large w3-large w3-cursive w3-round-xxlarge w3-white"><b>Crea tu Combinacion Favorita</b></a></p>
-    </div>
+    <img src="https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/168989420_102995511903003_2779694627982950262_n.png?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFw-qQ_ECefAl9Dn33p3c-ewYnrSbJckj_BietJslySP4aG7BYzEjtPfcHNhSwz04kGqQIOIFmUyvYBqUZ6HJ8K&_nc_ohc=hVCSLdlJiToAX_NXNv1&_nc_ht=scontent-den4-1.xx&oh=5ff6a30e81ef91414e4dd168cf61ea07&oe=61664947" alt="Logo" style="width:100%" height="550">
+    <!-- <div class="w3-display-topleft" style="padding:24px 48px">
+      <p><a onclick="myFunction2() "href="" class="w3-button w3-padding-large w3-large w3-cursive w3-round-xxlarge w3-white"><b>Crea tu Combinacion Favorita</b></a></p>
+    </div> -->
   </div>
-
   <div class="w3-container w3-text-grey" id="jeans">
-    <h3 class="info_clausula"><b> Lo mas pedido</b></h3>
+    <p class="info_clausula"><b> Postres finos basados en recetas de repostería fina tradicional del recetario de la Abuela Grace, 
+      repostera que desarrolló su oficio desde mediados del siglo XX en el sur del estado de Veracruz</b></p>
+      <h3 class="info_clausula"><b> Lo mas pedido</b></h3>
   </div>
   <!-- Product grid -->
     <div class="w3-row ">
@@ -145,14 +145,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
           <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
-          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+          <button type="submit" class="w3-button w3-block w3-black" onclick="myFunction()">Send</button>
         </form>
       </div>
 
       <div class="w3-col s4">
         <h4>Nosotros</h4>
         <p><a href="./Menu-IKHERKHE.pdf">Menu</a></p>
-        <p><a href="#">Ubicacion</a></p>
+        <p><a href="./Ubicacion.html">Ubicacion</a></p>
         <p><a href="#">Ayuda</a></p>
       </div>
 
@@ -161,8 +161,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         <p><i class="fa fa-fw fa-phone-square"></i> 33 1798 6973</p>
         <p><i class="fa fa-fw fa-phone"></i> 33 3113 8837</p>
         <h4>Aceptamos</h4>
-        <p><i class="fa fa-fw fa-cc-amex"></i> Visa / Mastercard </p>
-        <p><i class="fa fa-fw fa-credit-card"></i> Tarjeta Debito/Credito</p>
+        <p><i class="fa fa-fw fa-cc-amex"></i>Visa/Mastercard </p>
+        <p><i class="fa fa-fw fa-credit-card"></i>Tarjeta Debito/Credito</p>
         <br>
         <a href="https://www.facebook.com/ikherkhe"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge" style="color: rgb(31, 10, 187)"></i></a>
         <a href="https://www.instagram.com/ikherkhe_reposteria/"><i class="fa fa-instagram w3-hover-opacity w3-xlarge" style="color: #bb0a0a"></i></a>
@@ -194,14 +194,21 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <script>
 // Accordion 
 function myAccFunc() {
-  var x = document.getElementById("demo_tarta");
+  var x = document.getElementById("demo_nosotros");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }
-
+function myAccFunc1() {
+  var x = document.getElementById("demo_especiales");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
 function myFunction2() {
   alert("oops! Esta funcion no esta disponible por el momento.");
 }

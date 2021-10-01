@@ -3,3 +3,8 @@
     color: teal;
     text-align: center;
 }
+
+p:hover , footer:hover{
+    color: white;
+    background: teal;
+}
