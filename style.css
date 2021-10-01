@@ -34,7 +34,7 @@ footer{
     color: white;
 }
 p:hover , footer:hover{
-    color: black;
+    color: teal;
     background: white;
 }
 .card-text {
