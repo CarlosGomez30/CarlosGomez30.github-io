@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="ordenes.css">
+<link rel="stylesheet" href="carosel_style.css">
 <link rel="icon" href="favicon.ico">
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
@@ -20,7 +20,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top " style="z-index:3;width:230px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16 "></div>
         <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright "></i>
-        <a href="./index.html"><h3 class="w3-wide w3-text-teal"><b>IKHERKHE</b></h3></a>
+        <!-- <a href="./index.html"><h3 class="w3-wide w3-text-teal"><b>IKHERKHE</b></h3></a> -->
+        <img href="./index.html" src="https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/168989420_102995511903003_2779694627982950262_n.png?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFw-qQ_ECefAl9Dn33p3c-ewYnrSbJckj_BietJslySP4aG7BYzEjtPfcHNhSwz04kGqQIOIFmUyvYBqUZ6HJ8K&_nc_ohc=hVCSLdlJiToAX_NXNv1&_nc_ht=scontent-den4-1.xx&oh=5ff6a30e81ef91414e4dd168cf61ea07&oe=61664947" alt="IKHERKHE" style="width:100%" height="200">
     </div>
 
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
@@ -73,13 +74,72 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
 
-  <!-- Image header -->
-  <div class="w3-display-container w3-container">
-    <img src="https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/168989420_102995511903003_2779694627982950262_n.png?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFw-qQ_ECefAl9Dn33p3c-ewYnrSbJckj_BietJslySP4aG7BYzEjtPfcHNhSwz04kGqQIOIFmUyvYBqUZ6HJ8K&_nc_ohc=hVCSLdlJiToAX_NXNv1&_nc_ht=scontent-den4-1.xx&oh=5ff6a30e81ef91414e4dd168cf61ea07&oe=61664947" alt="IKHERKHE" style="width:100%" height="570">
-    <!-- <div class="w3-display-topleft" style="padding:24px 48px">
-      <p><a onclick="myFunction2() "href="" class="w3-button w3-padding-large w3-large w3-cursive w3-round-xxlarge w3-white"><b>Crea tu Combinacion Favorita</b></a></p>
-    </div> -->
-  </div>
+<section class="carousel" >
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+      <img src="tarta_fresas.jpeg" style="width: 100%; max-height: 100%;">
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+      <img src="tarta_queso.jpg" style="width: 100%; max-height: 100%;">
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+      <img src="tarta_nuez.jpg" style="width: 100%; max-height: 100%;">
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+      <img src="pie_limon.jpeg" style="width: 100%; max-height: 100%;">
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+
   <div class="w3-container w3-margin-left w3-margin-right" >
     <p class="info_clausula"><b> Postres finos basados en recetas de repostería fina tradicional del recetario de la Abuela Grace, 
       repostera que desarrolló su oficio desde mediados del siglo XX en el sur del estado de Veracruz</b></p>

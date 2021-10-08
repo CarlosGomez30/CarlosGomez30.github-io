@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>IKHERKHE</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" http-equiv="ikherkhe_reposteria" title="IKHERKHE">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="ordenes.css">
+<link rel="stylesheet" href="carosel_style.css">
 <link rel="icon" href="favicon.ico">
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
@@ -19,7 +20,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
         <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-        <a href="./index.html"><h3 class="w3-wide w3-text-teal"><b>IKHERKHE</b></h3></a>
+        <img href="./index.html" src="https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/168989420_102995511903003_2779694627982950262_n.png?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFw-qQ_ECefAl9Dn33p3c-ewYnrSbJckj_BietJslySP4aG7BYzEjtPfcHNhSwz04kGqQIOIFmUyvYBqUZ6HJ8K&_nc_ohc=hVCSLdlJiToAX_NXNv1&_nc_ht=scontent-den4-1.xx&oh=5ff6a30e81ef91414e4dd168cf61ea07&oe=61664947" alt="IKHERKHE" style="max-width:100%" height="200">
     </div>
 
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
@@ -80,7 +81,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <p><a onclick="myFunction2() "href="" class="w3-button w3-padding-large w3-large w3-cursive w3-round-xxlarge w3-white"><b>Crea tu Combinacion Favorita</b></a></p>
     </div> -->
   </div>
-  <div class="w3-container w3-text-grey" id="jeans">
+  <div class="w3-container w3-margin-left w3-margin-right" >
     <p class="info_clausula"><b> Postres finos basados en recetas de repostería fina tradicional del recetario de la Abuela Grace, 
       repostera que desarrolló su oficio desde mediados del siglo XX en el sur del estado de Veracruz</b></p>
       <h3 class="info_clausula"><b> Lo mas pedido</b></h3>
@@ -108,7 +109,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
         </div>
         <div class="w3-container">
             <img src="tarta_fresas.jpeg" style="width:100%">
-            <p><br><br>Tarta deTartas de queso <br>Toping de fresas y frutos rojos<br><b>$360.00</b></p>
+            <p><br><br>Tartas de queso <br>Toping de fresas y frutos rojos<br><b>$360.00</b></p>
         </div>
         </div>
     <!-- Columna 3 -->
@@ -121,18 +122,18 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
             <div class="w3-display-container">
             <img src="tarta_frutas.jpeg" style="width:100%">
             </div>
-            <p>Tarta deTartas de queso  con frutas de temporada<br><b>$360.00</b></p>
+            <p>Tartas de queso  con frutas de temporada<br><b>$360.00</b></p>
         </div>
         </div>
     <!-- Columna 4 -->
         <div class="w3-col l3 s6">
         <div class="w3-container">
-            <img src="pastel2.jpeg" style="width:100%">
-            <p>Pastel de Chocolate<br> Tres leches <br>Merengue Italiano <br><b>$460.00</b></p>
+            <img src="pie_limon.jpeg" style="width:100%">
+            <p><br> Tarta de Limon <br>(8 a 10 rebanadas)<br><br><b>$300.00</b></p>
         </div>
         <div class="w3-container">
             <img src="tarta_rojos.jpg" style="width:100%">
-            <p><br><br> Tarta deTartas de queso  con frutas de temporada<br><b>$360.00</b></p>
+            <p><br><br>Tartas de queso  con frutas de temporada<br><b>$360.00</b></p>
         </div>
         </div>
     </div>
@@ -142,12 +143,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <div class="w3-col s4">
         <h4>Contactanos</h4>
         <!-- <p>Questions? Go ahead.</p> -->
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
-          <button type="submit" class="w3-button w3-block w3-black" onclick="myFunction()">Send</button>
+        <form action="mailto:gomez.carlos30@gmial.com" target="_blank" method="post" enctype="text/plain">
+          <p><input class="w3-input w3-border" type="text" placeholder="Nombre" name="Nombre" required></p>
+          <p><input class="w3-input w3-border" type="email" placeholder="Correo Electronico" name="Correo Electronico" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Asunto" name="Asunto" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" name="Mensaje" required></p>
+          <button type="submit" class="w3-button w3-block w3-black" onclick="myFunction()">Enviar</button>
         </form>
       </div>
 
@@ -186,10 +187,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
     <div class="w3-container w3-white w3-center">
       <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
-      <h2 class="w3-wide">NEWSLETTER</h2>
-      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <h2 class="w3-wide"></h2>
+      <!-- <p>Join our mailing list to receive updates on new arrivals and special offers.</p> -->
       <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+      <!-- <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button> -->
     </div>
   </div>
 </div>
@@ -215,11 +216,6 @@ function myAccFunc1() {
 function myFunction2() {
   alert("oops! Esta funcion no esta disponible por el momento.");
 }
-
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
 
 // Open and close sidebar
 function w3_open() {
