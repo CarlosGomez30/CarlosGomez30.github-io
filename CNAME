@@ -1,5 +1,1 @@
-dig www.ikherkhe_reposteria.com +nostats +nocomments +nocmd
-;www.ikherkhe_reposteria.com. IN A
-www.ikherkhe_reposteria.com. 3592 IN CNAME YOUR-USERNAME.github.io.
-CarlosGomez30.github.io. 43192 IN CNAME GITHUB-PAGES-SERVER .
-GITHUB-PAGES-SERVER . 22 IN A 192.0.2.1
+www.ikherkhe_reposteria.com
