@@ -245,3 +245,6 @@ p:hover , footer:hover{
 .slideshow-container {
   align-self: center;
 }
+.linked:hover {
+  color: blue;
+}
