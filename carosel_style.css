@@ -31,13 +31,6 @@ p:hover , footer:hover{
 }
 
 
-
-
-body {
-  font-family: Arial;
-  margin: 0;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -97,14 +90,6 @@ img {
   padding: 8px 12px;
   position: absolute;
   top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
 }
 
 .row:after {
