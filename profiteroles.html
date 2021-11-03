@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>IKHERKHE</title>
+<title>ikherkhe_reposteria</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" http-equiv="ikherkhe_reposteria" title="IKHERKHE">
@@ -38,9 +38,10 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           <a href="tartas.html" class="w3-bar-item w3-button">Tartas/Tarta con queso (8 a 10 rebanadas)</a>
           <a href="pasteles.html" class="w3-bar-item w3-button">Pasteles (14 a 16 rebanadas)</a>
           <a href="profiteroles.html" class="w3-bar-item w3-button"> Galletas y Profiteroles (24 piezas)</a>
+
       </div>
 
-      <div class="w3-padding-16 w3-large w3-text-grey" style="font-weight:bold">
+      <div class="w3-padding-16 w3-large w3-text-grey" style="font-weight:bold"> 
           <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
             Ocasiones especiales <i class="fa fa-caret-down w3-text-teal"></i>
           </a>
@@ -50,7 +51,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       </div>
     </div>
 
-  <a href="Ubicacion.html" class="w3-bar-item w3-button w3-padding">Entrega a domicilio en <br> ciudad de Guadalajara y zona conurbada (Zapopan, Tlajomulco, Tlaquepaque)
+  <a href="Ubicacion.html" class="w3-bar-item w3-button w3-padding">Entrega a domicilio en <br> ciudad de Guadalajara y zona conurbada
+    (Zapopan, Tlajomulco, Tlaquepaque)
     </a>
   <!-- <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
   <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a> -->
@@ -71,173 +73,161 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
 
-<section class="carousel" >
-  <ol class="carousel__viewport">
-    <li id="carousel__slide1"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper">
-        <a href="#carousel__slide4"
-           class="carousel__prev">Go to last slide</a>
-        <a href="#carousel__slide2"
-           class="carousel__next">Go to next slide</a>
+  <section>
+
+    <div class="container">
+        <div class="mySlides">
+            <img src="profiteroles/profiteroles1.jpg" style="width: 100%; max-height: 100%;" height="450">
+          </div>
+
+        <div class="mySlides">
+        <img src="profiteroles/profis_salados.jpeg" style="width: 100%; max-height: 100%;" height="450">
       </div>
-      <img src="profiteroles/profis_rellenos_crema.jpg" style="width: 100%; max-height: 100%;">
-    </li>
-    <li id="carousel__slide2"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide1"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide3"
-         class="carousel__next">Go to next slide</a>
-      <img src="profiteroles/profiteroles1.jpg" style="width: 100%; max-height: 100%;">
-    </li>
-    <li id="carousel__slide3"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide2"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide4"
-         class="carousel__next">Go to next slide</a>
-      <img src="profiteroles/profiteroles_chocolate.jpeg" style="width: 100%; max-height: 100%;">
-    </li>
-    <li id="carousel__slide4"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide3"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide1"
-         class="carousel__next">Go to first slide</a>
-      <img src="profiteroles/especial_profiteroles.jpeg" style="width: 100%; max-height: 100%;">
-    </li>
-  </ol>
-  <aside class="carousel__navigation">
-    <ol class="carousel__navigation-list">
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide1"
-           class="carousel__navigation-button">Go to slide 1</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide2"
-           class="carousel__navigation-button">Go to slide 2</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide3"
-           class="carousel__navigation-button">Go to slide 3</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide4"
-           class="carousel__navigation-button">Go to slide 4</a>
-      </li>
-    </ol>
-  </aside>
-</section>
+    
+      <div class="mySlides">
+        <img src="profiteroles/profiteroles_chocolate.jpeg" style="width: 100%; max-height: 100%;"height="450">
+      </div>
+    
+      <div class="mySlides">
+        <img src="profiteroles/profis_rellenos_crema.jpg" style="width: 100%; max-height: 100%;"height="450">
+      </div>
+
+      <div class="mySlides">
+        <img src="profiteroles/galleta_nuez.jpg" style="width: 100%; max-height: 100%;"height="450">
+      </div>
+
+      <div class="mySlides">
+        <img src="profiteroles/galleta_nuez_2.jpeg" style="width: 100%; max-height: 100%;"height="450">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
 
 
-  <div class="w3-container w3-text-grey" id="jeans">
-    <p class="info_clausula"><b> Postres finos basados en recetas de repostería fina tradicional del recetario de la Abuela Grace, 
-      repostera que desarrolló su oficio desde mediados del siglo XX en el sur del estado de Veracruz</b></p>
-      <h3 class="info_clausula"><b> Lo mas pedido</b></h3>
-  </div>
-  <!-- Product grid -->
-    <div class="w3-row ">
-    <!-- Columna 1 -->
-        <div class="w3-col l3 s6">
-        <div class="w3-container">
-            <img src="profiteroles/profis_rellenos_crema.jpg" style="width:100%">
-            <p><a class="linked" href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar la tarta'> Ordenar</a><br>Profiteroles rellenos de crema pastelera(24 piezas)<br><b>$360.00</b></p>
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="profiteroles/profiteroles1.jpg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(1)" >
         </div>
-        <div class="w3-container">
-            <img src="" style="width:100%">
-            <p>No disponible<br><b>$</b></p>
+        <div class="column">
+          <img class="demo cursor" src="profiteroles/profis_salados.jpeg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(2)" >
         </div>
+        <div class="column">
+          <img class="demo cursor" src="profiteroles/profiteroles_chocolate.jpeg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(3)">
         </div>
-    <!-- Columna 2 -->
-        <div class="w3-col l3 s6">
-        <div class="w3-container">
-            <div class="w3-display-container">
-            <img src="profiteroles/profiteroles1.jpg" style="width:100%">
+        <div class="column">
+          <img class="demo cursor" src="profiteroles/profis_rellenos_crema.jpg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(4)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="profiteroles/galleta_nuez.jpg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(5)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="profiteroles/galleta_nuez_2.jpeg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(6)" >
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+    <div class="w3-container w3-text-grey" id="jeans">
+        <p class="info_clausula"><b> Postres finos basados en recetas de repostería fina tradicional del recetario de la Abuela Grace, 
+          repostera que desarrolló su oficio desde mediados del siglo XX en el sur del estado de Veracruz</b></p>
+          <h3 class="info_clausula"><b> Lo mas pedido</b></h3>
+      </div>
+      <!-- Product grid -->
+        <div class="w3-row ">
+        <!-- Columna 1 -->
+            <div class="w3-col l3 s6">
+            <div class="w3-container">
+                <img src="profiteroles/profis_rellenos_crema.jpg" style="width:100%">
+                <p><a class="linked" href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar la tarta'> Ordenar</a><br>Profiteroles rellenos de crema pastelera(24 piezas)<br><b>$360.00</b></p>
             </div>
-            <p><a class="linked" href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar el pastel C4R4'> Ordenar</a><br> Profiteroles <br>Toping azucar glass<br>Relleno Crema de vainilla <br><b>$310.00</b></p>
-        </div>
-        <div class="w3-container">
-          <img src="profiteroles/galleta_nuez.jpg" style="width:100%">
-          <p><a class="linked" href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar la tarta'> Ordenar</a><br> Galletas de Nuez<br><b> 1 Kilo $290.00 <br> 1/2 Kilo $150.00 <br> 1/4 Kilo $80.00</b></p>
-      </div>
-        </div>
-    <!-- Columna 3 -->
-        <div class="w3-col l3 s6">
-        <div class="w3-container">
-            <img src="profiteroles/profiteroles_chocolate.jpeg" style="width:100%">
-            <p><a class="linked" href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar la tarta'> Ordenar</a><br>Profiteroles <br>Toping de chocolate<br>Relleno Crema de vainilla <br><b>$360.00</b></p>
-        </div>
-        <div class="w3-container">
-            <div class="w3-display-container">
-            <img src="profiteroles/profis_salados.jpeg" style="width:100%">
+            <div class="w3-container">
+                <img src="" style="width:100%">
+                <p>No disponible<br><b>$</b></p>
             </div>
-            <p><a class="linked" href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar el pastel C3R4'> Ordenar</a><br>Descripcion No disponible<br><b>$</b></p>
+            </div>
+        <!-- Columna 2 -->
+            <div class="w3-col l3 s6">
+            <div class="w3-container">
+                <div class="w3-display-container">
+                <img src="profiteroles/profiteroles1.jpg" style="width:100%">
+                </div>
+                <p><a class="linked" href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar el pastel C4R4'> Ordenar</a><br> Profiteroles <br>Toping azucar glass<br>Relleno Crema de vainilla <br><b>$310.00</b></p>
+            </div>
+            <div class="w3-container">
+              <img src="profiteroles/galleta_nuez.jpg" style="width:100%">
+              <p><a class="linked" href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar la tarta'> Ordenar</a><br> Galletas de Nuez<br><b> 1 Kilo $290.00 <br> 1/2 Kilo $150.00 <br> 1/4 Kilo $80.00</b></p>
+          </div>
+            </div>
+        <!-- Columna 3 -->
+            <div class="w3-col l3 s6">
+            <div class="w3-container">
+                <img src="profiteroles/profiteroles_chocolate.jpeg" style="width:100%">
+                <p><a class="linked" href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar la tarta'> Ordenar</a><br>Profiteroles <br>Toping de chocolate<br>Relleno Crema de vainilla <br><b>$360.00</b></p>
+            </div>
+            <div class="w3-container">
+                <div class="w3-display-container">
+                <img src="profiteroles/profis_salados.jpeg" style="width:100%">
+                </div>
+                <p><a class="linked" href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar el pastel C3R4'> Ordenar</a><br>Descripcion No disponible<br><b>$</b></p>
+            </div>
+            </div>
+        <!-- Columna 4 -->
+            <div class="w3-col l3 s6">
+            <div class="w3-container">
+                <img src="" style="width:100%">
+                <p>No disponible<br><b>$</b></p>
+            </div>
+            <div class="w3-container">
+                <img src="" style="width:100%">
+                <p>No disponible<br><b>$</b></p>
+            </div>
+            </div>
         </div>
+      <!-- Footer -->
+      <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+        <div class="w3-row-padding">
+          <div class="w3-col s4">
+            <h4>Contactanos</h4>
+            <!-- <p>Questions? Go ahead.</p> -->
+            <form action="/action_page.php" target="_blank">
+              <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+              <button type="submit" class="w3-button w3-block w3-black" onclick="myFunction()">Send</button>
+            </form>
+          </div>
+    
+          <div class="w3-col s4">
+            <h4>Nosotros</h4>
+            <p><a href="./Menu-IKHERKHE.pdf">Menu</a></p>
+            <p><a href="./Ubicacion.html">Ubicacion</a></p>
+            <p><a href="#">Ayuda</a></p>
+          </div>
+    
+          <div class="w3-col s4 w3-justify">
+            <h4>Tienda</h4>
+            <p><i class="fa fa-fw fa-phone-square"></i> 33 1798 6973</p>
+            <p><i class="fa fa-fw fa-phone"></i> 33 3113 8837</p>
+            <h4>Aceptamos</h4>
+            <p><i class="fa fa-fw fa-cc-amex"></i>Visa/Mastercard </p>
+            <p><i class="fa fa-fw fa-credit-card"></i>Tarjeta Debito/Credito</p>
+            <br>
+            <a href="https://www.facebook.com/ikherkhe"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge" style="color: rgb(31, 10, 187)"></i></a>
+            <a href="https://www.instagram.com/ikherkhe_reposteria/"><i class="fa fa-instagram w3-hover-opacity w3-xlarge" style="color: #bb0a0a"></i></a>
+            <a href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar un pastel' ><i class="fa fa-whatsapp w3-hover-opacity w3-xlarge" style="background-color: #7ACC72;border: none; color: white; text-decoration: none; border-radius: 1px; cursor: pointer"></i></a>
+          </div>
         </div>
-    <!-- Columna 4 -->
-        <div class="w3-col l3 s6">
-        <div class="w3-container">
-            <img src="" style="width:100%">
-            <p>No disponible<br><b>$</b></p>
+      </footer>
+    
+      <div class="w3-white w3-center w3-padding-24"><p class="info_clausula"><b> Todos y cada uno de nuestros productos están elaborados con materias primas de alta calidad y
+        condiciones de higiene óptimas. La producción está a cargo del maestro pastelero Martin Carrión
+        Ramos, Ingeniero Bioquímico con especialidad en alimentos.</b></p>
         </div>
-        <div class="w3-container">
-            <img src="" style="width:100%">
-            <p>No disponible<br><b>$</b></p>
-        </div>
-        </div>
+    
+      <!-- End page content -->
     </div>
-  <!-- Footer -->
-  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
-    <div class="w3-row-padding">
-      <div class="w3-col s4">
-        <h4>Contactanos</h4>
-        <!-- <p>Questions? Go ahead.</p> -->
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
-          <button type="submit" class="w3-button w3-block w3-black" onclick="myFunction()">Send</button>
-        </form>
-      </div>
-
-      <div class="w3-col s4">
-        <h4>Nosotros</h4>
-        <p><a href="./Menu-IKHERKHE.pdf">Menu</a></p>
-        <p><a href="./Ubicacion.html">Ubicacion</a></p>
-        <p><a href="#">Ayuda</a></p>
-      </div>
-
-      <div class="w3-col s4 w3-justify">
-        <h4>Tienda</h4>
-        <p><i class="fa fa-fw fa-phone-square"></i> 33 1798 6973</p>
-        <p><i class="fa fa-fw fa-phone"></i> 33 3113 8837</p>
-        <h4>Aceptamos</h4>
-        <p><i class="fa fa-fw fa-cc-amex"></i>Visa/Mastercard </p>
-        <p><i class="fa fa-fw fa-credit-card"></i>Tarjeta Debito/Credito</p>
-        <br>
-        <a href="https://www.facebook.com/ikherkhe"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge" style="color: rgb(31, 10, 187)"></i></a>
-        <a href="https://www.instagram.com/ikherkhe_reposteria/"><i class="fa fa-instagram w3-hover-opacity w3-xlarge" style="color: #bb0a0a"></i></a>
-        <a href='https://api.whatsapp.com/send?phone=523317986973&amp;text=Hola, Quisiera ordenar un pastel' ><i class="fa fa-whatsapp w3-hover-opacity w3-xlarge" style="background-color: #7ACC72;border: none; color: white; text-decoration: none; border-radius: 1px; cursor: pointer"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <div class="w3-white w3-center w3-padding-24"><p class="info_clausula"><b> Todos y cada uno de nuestros productos están elaborados con materias primas de alta calidad y
-    condiciones de higiene óptimas. La producción está a cargo del maestro pastelero Martin Carrión
-    Ramos, Ingeniero Bioquímico con especialidad en alimentos.</b></p>
-    </div>
-
-  <!-- End page content -->
-</div>
 
 <!-- Newsletter Modal -->
 <div id="newsletter" class="w3-modal">
@@ -253,43 +243,66 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <script>
-// Accordion 
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  function myAccFunc1() {
+var x = document.getElementById("demo_especiales");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+} else {
+  x.className = x.className.replace(" w3-show", "");
+}
+}
 function myAccFunc() {
-  var x = document.getElementById("demo_nosotros");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
+var x = document.getElementById("demo_nosotros");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+} else {
+  x.className = x.className.replace(" w3-show", "");
 }
-function myAccFunc1() {
-  var x = document.getElementById("demo_especiales");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
 }
+
 function myFunction2() {
-  alert("Ordene directamente desde nuestra Galeria o contactanos por mensaje o llamanos y dinos como te gustaria tu pastel, seguro podemos hacer un pastel a tu gusto.");
+alert("Ordene directamente desde nuestra Galeria o contactanos por mensaje o llamanos y dinos como te gustaria tu pastel, seguro podemos hacer un pastel a tu gusto.");
 }
-
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
 
 // Open and close sidebar
 function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
+document.getElementById("mySidebar").style.display = "block";
+document.getElementById("myOverlay").style.display = "block";
 }
- 
+
 function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
+document.getElementById("mySidebar").style.display = "none";
+document.getElementById("myOverlay").style.display = "none";
 }
-</script>
+  </script>
 
 </body>
 </html>

@@ -72,11 +72,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Image header -->
   <div class="w3-display-container w3-container">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14103.946970071811!2d-103.47770381781226!3d20.561383192240655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f54b47e4a4155%3A0x1a2164b8fb586b79!2sEnrique%20Lim%C3%B3n%20D%C3%ADaz%20200%2C%20Fraccionamiento%20Bosques%20Santa%20Anita%2C%20Jal.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1632245429385!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    <!-- <img src="https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/168989420_102995511903003_2779694627982950262_n.png?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFw-qQ_ECefAl9Dn33p3c-ewYnrSbJckj_BietJslySP4aG7BYzEjtPfcHNhSwz04kGqQIOIFmUyvYBqUZ6HJ8K&_nc_ohc=hVCSLdlJiToAX_NXNv1&_nc_ht=scontent-den4-1.xx&oh=5ff6a30e81ef91414e4dd168cf61ea07&oe=61664947" alt="Logo" style="width:100%"> -->
-    <!-- <div class="w3-display-topleft" style="padding:24px 48px">
-      <p><a onclick="myFunction2() "href="" class="w3-button w3-padding-large w3-large w3-cursive w3-round-xxlarge w3-white"><b>Crea tu Combinacion Favorita</b></a></p>
-    </div> -->
   </div>
+
   <div class="w3-container w3-margin-left w3-margin-right" >
     <p class="info_clausula"><b> Postres finos basados en recetas de repostería fina tradicional del recetario de la Abuela Grace, 
       repostera que desarrolló su oficio desde mediados del siglo XX en el sur del estado de Veracruz</b></p>
@@ -192,38 +189,66 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <script>
-// Accordion 
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  function myAccFunc1() {
+var x = document.getElementById("demo_especiales");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+} else {
+  x.className = x.className.replace(" w3-show", "");
+}
+}
 function myAccFunc() {
-  var x = document.getElementById("demo_nosotros");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
+var x = document.getElementById("demo_nosotros");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+} else {
+  x.className = x.className.replace(" w3-show", "");
 }
-function myAccFunc1() {
-  var x = document.getElementById("demo_especiales");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
 }
+
 function myFunction2() {
-  alert("Ordene directamente desde nuestra Galeria o contactanos por mensaje o llamanos y dinos como te gustaria tu pastel, seguro podemos hacer un pastel a tu gusto.");
+alert("Ordene directamente desde nuestra Galeria o contactanos por mensaje o llamanos y dinos como te gustaria tu pastel, seguro podemos hacer un pastel a tu gusto.");
 }
 
 // Open and close sidebar
 function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
+document.getElementById("mySidebar").style.display = "block";
+document.getElementById("myOverlay").style.display = "block";
 }
- 
+
 function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
+document.getElementById("mySidebar").style.display = "none";
+document.getElementById("myOverlay").style.display = "none";
 }
-</script>
+  </script>
 
 </body>
 </html>

@@ -73,71 +73,58 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
 
-<section class="carousel" >
-  <ol class="carousel__viewport">
-    <li id="carousel__slide1"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper">
-        <a href="#carousel__slide4"
-           class="carousel__prev">Go to last slide</a>
-        <a href="#carousel__slide2"
-           class="carousel__next">Go to next slide</a>
+  <section>
+
+    <div class="container">
+      <div class="mySlides">
+        <img src="tartas/tarta_queso.jpg" style="width: 100%; max-height: 100%;" height="450">
       </div>
-      <img src="tartas/tarta_queso.jpg" style="width: 100%; max-height: 100%;">
-    </li>
-    <li id="carousel__slide2"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide1"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide3"
-         class="carousel__next">Go to next slide</a>
-      <img src="tartas/tarta_mandarina.jpeg" style="width: 100%; max-height: 100%;">
-    </li>
-    <li id="carousel__slide3"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide2"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide4"
-         class="carousel__next">Go to next slide</a>
-      <img src="tartas/tarta_nuez.jpg" style="width: 100%; max-height: 100%;">
-    </li>
-    <li id="carousel__slide4"
-        tabindex="0"
-        class="carousel__slide">
-      <div class="carousel__snapper"></div>
-      <a href="#carousel__slide3"
-         class="carousel__prev">Go to previous slide</a>
-      <a href="#carousel__slide1"
-         class="carousel__next">Go to first slide</a>
-      <img src="tartas/tarta_limon.jpeg" style="width: 100%; max-height: 100%;">
-    </li>
-  </ol>
-  <aside class="carousel__navigation">
-    <ol class="carousel__navigation-list">
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide1"
-           class="carousel__navigation-button">Go to slide 1</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide2"
-           class="carousel__navigation-button">Go to slide 2</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide3"
-           class="carousel__navigation-button">Go to slide 3</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide4"
-           class="carousel__navigation-button">Go to slide 4</a>
-      </li>
-    </ol>
-  </aside>
-</section>
+    
+      <div class="mySlides">
+        <img src="tartas/tarta_mandarina.jpeg" style="width: 100%; max-height: 100%;" height="450">
+      </div>
+    
+      <div class="mySlides">
+        <img src="tartas/tarta_nuez.jpg" style="width: 100%; max-height: 100%;"height="450">
+      </div>
+    
+      <div class="mySlides">
+        <img src="tartas/tarta_limon.jpeg" style="width: 100%; max-height: 100%;"height="450">
+      </div>
+    
+      <div class="mySlides">
+        <img src="pasteles/pastel1.jpg" style="width: 100%; max-height: 100%;"height="450">
+      </div>
+        
+      <div class="mySlides">
+        <img src="profiteroles/profiteroles1.jpg" style="width: 100%; max-height: 100%;"height="450">
+      </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="tartas/tarta_queso.jpg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(1)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="tartas/tarta_mandarina.jpeg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(2)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="tartas/tarta_nuez.jpg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(3)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="tartas/tarta_limon.jpeg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(4)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="pasteles/pastel1.jpg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(5)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="profiteroles/profiteroles1.jpg" style="width: 100%; max-height: 100%;" height="100" onclick="currentSlide(6)" >
+        </div>
+      </div>
+    </div>
+    </section>
 
   <div class="w3-container w3-margin-left w3-margin-right" >
     <p class="info_clausula"><b> Postres finos basados en recetas de repostería fina tradicional del recetario de la Abuela Grace, 
@@ -253,39 +240,66 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <script>
-// Accordion 
-function myAccFunc1() {
-  var x = document.getElementById("demo_especiales");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  function myAccFunc1() {
+var x = document.getElementById("demo_especiales");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+} else {
+  x.className = x.className.replace(" w3-show", "");
+}
 }
 function myAccFunc() {
-  var x = document.getElementById("demo_nosotros");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
+var x = document.getElementById("demo_nosotros");
+if (x.className.indexOf("w3-show") == -1) {
+  x.className += " w3-show";
+} else {
+  x.className = x.className.replace(" w3-show", "");
+}
 }
 
 function myFunction2() {
-  alert("Ordene directamente desde nuestra Galeria o contactanos por mensaje o llamanos y dinos como te gustaria tu pastel, seguro podemos hacer un pastel a tu gusto.");
+alert("Ordene directamente desde nuestra Galeria o contactanos por mensaje o llamanos y dinos como te gustaria tu pastel, seguro podemos hacer un pastel a tu gusto.");
 }
 
 // Open and close sidebar
 function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
+document.getElementById("mySidebar").style.display = "block";
+document.getElementById("myOverlay").style.display = "block";
 }
- 
+
 function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
+document.getElementById("mySidebar").style.display = "none";
+document.getElementById("myOverlay").style.display = "none";
 }
-</script>
+  </script>
 
 </body>
 </html>
